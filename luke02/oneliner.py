@@ -1,0 +1,1 @@
+print(sum([l.count(' ') for l in [l.strip() for l in open('world.txt').readlines()]]))
