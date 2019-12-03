@@ -1,6 +1,6 @@
 from PIL import Image
 
-bits = [int(b) for b in open('img.txt').read()]
+bits = [int(b) for b in open('input.txt').read()]
 factors = [i for i in range(500, 1450) if 720720 % i == 0]
 sizes = [(f, 720720//f) for f in factors]
 
