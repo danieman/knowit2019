@@ -9,8 +9,8 @@ def move(src, dst):
     old_x, old_y = src
     new_x, new_y = dst
     
-    x_step = (new_x - old_x) // abs(new_x - old_x) if old_x != new_x else 0
-    y_step = (new_y - old_y) // abs(new_y - old_y) if old_y != new_y else 0
+    x_step = 1 if old_x < new_x else -1
+    y_step = 1 if old_y < new_y else -1
     
     while cur_x != new_x:
         cur_x += x_step
