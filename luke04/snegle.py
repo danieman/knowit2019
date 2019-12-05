@@ -6,11 +6,10 @@ def move(src, dst):
     global minutes
     
     cur_x, cur_y = src
-    old_x, old_y = src
     new_x, new_y = dst
     
-    x_step = 1 if old_x < new_x else -1
-    y_step = 1 if old_y < new_y else -1
+    x_step = 1 if cur_x < new_x else -1
+    y_step = 1 if cur_y < new_y else -1
     
     while cur_x != new_x:
         cur_x += x_step
